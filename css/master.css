@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* body {
+    background-color: #9AA6B2;
+} */
+footer {
+    width: 100%;
+    background: #9AA6B2;
+    text-align: center;
+}
+
+#pageGrid {
+    display: grid;
+    grid-template-columns: 70% 29%;
+    text-align: center;
+
+}
+nav {
+    display:flex;
+}
+#TopNavBar {
+    color: #F8FAFC;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #BCCCDC;
+}
+
+#naviLinks {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+#naviLinks li {
+    padding: 3px;
+}
+#naviLinks li > a {
+    color: #F8FAFC;
+}
+.contentBox {
+    display: inline-block;
+    font-family: 'quicksand', sans-serif;
+    margin: 0 1em;
+    padding: 1em;
+    border-radius: 4px;
+    margin-bottom: .3em;
+    border: lightgray 1px solid;
+}
+.contentBox h2 {
+    text-align: center;
+    font-size: 18px;
+}
+.contentBox .sneakPeek {
+    font-size: 12px;
+    position: relative;
+}
+.contentBox .Tags {
+    font-size: 8px;
+}
+main > div:nth-child(odd)
+{
+    background: #BCCCDC;;
+}
+main > div:nth-child(even){
+    background: #D9EAFD;
+}
+.sideContent {
+    font-family: 'Quicksand', sans-serif;
+    padding: 1em;
+    margin-bottom: .3em;
+    border: lightgray 1px solid;
+}
+.sideContent h3 {
+    font-size: 18px;
+    text-align: center;
+}
+.sideContent .summary {
+    font-size: 12px;
+}
+#sideNav > div:nth-child(odd)
+{
+    background: #BCCCDC;
+
+}
+#sideNav > div:nth-child(even)
+{
+    background: #D9EAFD;
+}
+
+.postImage {
+    float: left;
+    max-width: 3em;
+    max-height: auto;
+    padding-right: .5em;
+    
+}
+#NewPost {
+    margin: auto;
+}
+
+#modalNewPost {
+    display: none;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    padding: 3em;
+    background:#D9EAFD;
+    text-align: center;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+
+#modalWrapper {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+#welcomeHead h2 {
+    margin: auto;
+    text-align: center;
+}
+.contentBox:nth-child(even) #testText{
+    float: left; /* Makes the image float to the left of the text */
+    font-family: 'Rouge Script', sans-serif;
+    font-size: 1.5em;
+    text-shadow: 0 0 3px black, 0 0 5px black;
+    color: #F8FAFC;
+    writing-mode: sideways-lr;
+    text-orientation: upright;
+    margin-left: -1.8rem;
+    margin-right: 5px; /* Adds space between the image and the text */
+
+}
+.contentBox:nth-child(odd) #testText{
+    float: right; /* Makes the image float to the right of the text */
+    font-family: 'Rouge Script', sans-serif;
+    color: #F8FAFC;
+    font-size: 1.5em;
+    text-shadow: 0 0 3px black, 0 0 5px black;
+    writing-mode: sideways-rl;
+    margin-left: 15px; /* Adds space between the image and the text */
+    margin-right: -2rem; /* Ensures no overlap */
+
+}
+
+#welcomeModal {
+    display: none;
+}
